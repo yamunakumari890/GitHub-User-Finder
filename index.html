@@ -4,8 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Github-User-Finder</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <div class="container">
+    <header class="header">
+    <h1>🔍 Github User Finder</h1>
+    <p>Search for any Github user</p>
+    </header>
+    
+    <section class="search-section">
+      <input type="text" id="usernameInput" placeholder="Enter Github Username">
+
+      <button id="searchBtn">🔍 Search</button>
+    </section>
+
+    <section class="user-card">
+        <img id="userImage" src="" alt="Github User">
+
+        <h2 id="userName">User Name</h2>
+
+        <p id="userUsername">@username</p>
+
+        <p id="userBio">User bio will appear here.</p>
+
+        <p id="userLocation">📍Location</p>
+
+        <div class="stats">
+          <div>
+            <strong id="followers">0</strong>
+            <span>Followers</span>
+          </div>
+
+          <div>
+            <strong id="following">0</strong>
+            <span>Following</span>
+          </div>
+
+          <div>
+            <strong id="repositories">0</strong>
+            <span>Repositories</span>
+          </div>
+        </div>
+
+        <a id="profileLink" href="#" target="_blank">View Github Profile</a>
+    </section>
+
+  </div>
 </body>
+<scrpit src="script.js"></scrpit>
 </html>
