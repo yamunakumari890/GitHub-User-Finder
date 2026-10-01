@@ -93,3 +93,47 @@ body{
   color: #4b5563;
   margin-bottom: 12px;
 }
+
+#userLocation {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  padding: 15px 0;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.stats div{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stats strong{
+  font-size: 20px;
+  color: #111827;
+}
+
+.stats span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+#profileLink {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 11px 18px;
+  background: #24292f;
+  color: white;
+  flex-direction: none;
+  border-radius: 8px;
+}
+
+#profileLink:hover{
+  background: #000;
+}
