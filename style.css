@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.conatiner{
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.header{
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.header h1{
+ color: #1f2937;
+ margin-bottom: 10px;
+}
+
+.header p{
+  color: #6b7280;
+}
+
+.search-section{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#usernameInput{
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+#searchBtn{
+  padding: 13px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #24292f;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#searchBtn:hover{
+  background: #000;
+}
+
+.user-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+#userImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+#userName{
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+#userUsername {
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+#userBio{
+  color: #4b5563;
+  margin-bottom: 12px;
+}
