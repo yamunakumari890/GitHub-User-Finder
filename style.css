@@ -137,3 +137,15 @@ body{
 #profileLink:hover{
   background: #000;
 }
+
+@media (max-width: 500px) {
+  .search-section {
+    flex-direction: column;
+  }
+  #searchBtn {
+    width: 100%;
+  }
+  .user-card {
+    padding: 25px 20px;
+  }
+}
