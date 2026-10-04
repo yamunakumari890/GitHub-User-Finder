@@ -6,7 +6,8 @@
 
 body{
   font-family: Arial, sans-serif;
-  background: #f4f7fb;
+  background: #1C2D4C
+;
   min-height: 100vh;
 
   display: flex;
@@ -27,12 +28,12 @@ body{
 }
 
 .header h1{
- color: #1f2937;
+ color: #f4f7fb;
  margin-bottom: 10px;
 }
 
 .header p{
-  color: #6b7280;
+  color: #2b73d1;
 }
 
 .search-section{
