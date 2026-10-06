@@ -26,6 +26,14 @@ async function searchUser() {
   console.log(user);
 
   userName.textContent = user.name;
+  userImage.src = user.avatar_url;
+  userBio.textContent = user.bio;
+  userUsername.textContent = "@" + user.login;
+  userLocation.textContent = "📍" + user.location;
+
+  followers.textContent = user.followers;
+  following.textContent = user.following;
+  respositories.textContent = user.public_repos;
 
 }
 
