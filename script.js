@@ -17,6 +17,16 @@ async function searchUser() {
   console.log(username);
 
  const apiUrl = `https://api.github.com/users/${username}`;
+
+ try{
+  const response = await fetch(apiUrl);
+  const user = await response.json();
+
+ }
+ catch (error){
+  console.log(error);
+ }
+ 
   console.log(apiUrl);
 
   const response = await fetch(apiUrl);
@@ -34,7 +44,7 @@ async function searchUser() {
   followers.textContent = user.followers;
   following.textContent = user.following;
   respositories.textContent = user.public_repos;
+  profileLink.href = user.html_url;
 
 }
-
 searchBtn.addEventListener("click", searchUser);
