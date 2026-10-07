@@ -20,13 +20,21 @@ async function searchUser() {
 
  try{
   const response = await fetch(apiUrl);
+
+  if (!response.ok) {
+    throw new Error("User not found");
+  }
+
   const user = await response.json();
 
  }
  catch (error){
   console.log(error);
+
+  userName.textContent = "User not found";
+  userBio.textContent = "Please check the username and try again."
  }
- 
+
   console.log(apiUrl);
 
   const response = await fetch(apiUrl);
