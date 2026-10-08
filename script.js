@@ -24,9 +24,12 @@ async function searchUser() {
  const apiUrl = `https://api.github.com/users/${username}`;
 
  try{
+  username.textContent = "Loading...";
+
   const response = await fetch(apiUrl);
 
   if (!response.ok) {
+    
     throw new Error("User not found");
   }
 
