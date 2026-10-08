@@ -13,6 +13,11 @@ const profileLink = document.getElementById("profileLink");
 async function searchUser() {
   const username = usernameInput.value.trim();
 
+  if(username === "") {
+    alert("Please enter a Github username");
+    return;
+  }
+
   console.log("Button clicked!");
   console.log(username);
 
