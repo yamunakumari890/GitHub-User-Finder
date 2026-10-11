@@ -47,3 +47,26 @@ This project uses the GitHub REST API  to retrieve public Github User informatio
 
 The username entered by the user is added dynamically to the API URL.
 
+
+## ⚙️ How It Works
+
+1. The user entres a GitHub username. 
+2. JavaScript reads the username from the input field.
+3. A dyanamic API URL is created using the username.
+4. The Fetch API sends a request to GitHub.
+5. The API returns user information in JSON format.
+6. JavaScript processes the response.
+7. The user's profile picture, name, bio, location, followers, following, public repositories are displayed.
+8. The user can click the profile link to visit the GitHUb account.
+9. Error handling displays a message when the username is invalid.
+
+
+## 👩‍💻 Author
+
+**Yamuna Kumari**
+
+BCA Student | Aspiring Web Developer
+
+### 🔗 GitHub
+
+[Visit My GitHub Profile](https://github.com/yamunakumari890)
